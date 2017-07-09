@@ -18,7 +18,6 @@ import lombok.Data;
  *
  */
 
-@Data
 @Entity
 @Table(name="employee_salary_type")
 public class EmployeeSalaryType {
@@ -29,5 +28,22 @@ public class EmployeeSalaryType {
 	
 	@Column(name="type_name")
 	private String typeName;
+
+	public Long getSalaryTypeId() {
+		return salaryTypeId;
+	}
+
+	public void setSalaryTypeId(Long salaryTypeId) {
+		this.salaryTypeId = salaryTypeId;
+	}
+
+	public String getTypeName() {
+		return typeName;
+	}
+
+	public void setTypeName(String typeName) {
+		this.typeName = typeName;
+	}
+	
 	
 }

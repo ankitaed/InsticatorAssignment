@@ -14,7 +14,6 @@ import org.hibernate.annotations.NotFoundAction;
 
 import lombok.Data;
 
-@Data
 @Entity
 @Table(name="employee")
 public class Employee {
@@ -35,4 +34,44 @@ public class Employee {
 	
 	@ManyToOne(cascade=CascadeType.ALL)
 	private EmployeeType employeeType;
+	
+	public Long getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(Long employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public EmployeeSalaryType getEmployeeSalaryType() {
+		return employeeSalaryType;
+	}
+
+	public void setEmployeeSalaryType(EmployeeSalaryType employeeSalaryType) {
+		this.employeeSalaryType = employeeSalaryType;
+	}
+
+	public EmployeeType getEmployeeType() {
+		return employeeType;
+	}
+
+	public void setEmployeeType(EmployeeType employeeType) {
+		this.employeeType = employeeType;
+	}
 }

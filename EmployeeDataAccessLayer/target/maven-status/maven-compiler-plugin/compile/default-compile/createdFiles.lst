@@ -1,0 +1,5 @@
+org\insticator\employeemanagement\repository\EmployeeRepository.class
+org\insticator\employeemanagement\repository\EmployeeTypeRepository.class
+org\insticator\employeemanagement\springconfig\ApplicationConfig.class
+org\insticator\employeemanagement\db\service\EmployeeManagementDBService.class
+org\insticator\employeemanagement\repository\EmployeeSalaryTypeRepository.class

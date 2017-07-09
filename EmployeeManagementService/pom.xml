@@ -18,6 +18,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+  		<groupId>org.apache.tomcat.maven</groupId>
+  		<artifactId>tomcat7-maven-plugin</artifactId>
+  		<version>2.2</version>
+  		<type>maven-plugin</type>
+  	</dependency>
+    <dependency>
     	<groupId>com.sun.jersey</groupId>
     	<artifactId>jersey-server</artifactId>
     	<version>1.19.4</version>
@@ -26,6 +32,53 @@
     	<groupId>org.insticator</groupId>
     	<artifactId>EmployeeManagementServiceInterface</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.insticator</groupId>
+    	<artifactId>EmployeeDataAccessLayer</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-core</artifactId>
+    	<version>4.3.9.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context</artifactId>
+    	<version>4.3.9.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-web</artifactId>
+    	<version>4.3.9.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.sun.jersey.contribs</groupId>
+    	<artifactId>jersey-spring</artifactId>
+    	<version>1.19.4</version>
+    	<exclusions>
+    	<exclusion>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring</artifactId>
+		</exclusion>
+		<exclusion>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+		</exclusion>
+		<exclusion>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-web</artifactId>
+		</exclusion>
+		<exclusion>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+		</exclusion>
+		<exclusion>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+		</exclusion>
+		</exclusions>
     </dependency>
   </dependencies>
   

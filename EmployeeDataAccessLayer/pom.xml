@@ -2,6 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.insticator</groupId>
   <artifactId>EmployeeDataAccessLayer</artifactId>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
   	<dependency>
@@ -14,10 +15,37 @@
   		<artifactId>spring-data-jpa</artifactId>
   		<version>1.11.4.RELEASE</version>
   	</dependency>
+  	
   	<dependency>
-  		<groupId>org.insticator</groupId>
-  		<artifactId>EmployeeManagementModels</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+	    <groupId>org.projectlombok</groupId>
+	    <artifactId>lombok</artifactId>
+	    <version>1.16.16</version>
+	    <scope>provided</scope>
+	</dependency>
+	<dependency>
+    	<groupId>commons-lang</groupId>
+    	<artifactId>commons-lang</artifactId>
+    	<version>2.6</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.insticator</groupId>
+		<artifactId>EmployeeManagementModels</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
   </dependencies>
+   <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>3.6.1</version>
+  			<configuration>
+				<source>1.7</source>
+				<target>1.7</target>
+			</configuration>
+  		</plugin>
+  		</plugins>
+  		</build>
 </project>
